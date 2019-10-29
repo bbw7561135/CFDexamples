@@ -185,7 +185,7 @@ void cal_states_update(double u[], double unew[], double dx, double dt, int indl
 
     for(int i=indlo;i<=indhi;i++)
     {
-        unew[i] = u[i] + dt/dx*(0.5*us[i]*us[i]-0.5*us[i+1]*us[i+1]);
+        unew[i] = u[i] + dt/dx*(0.5*us[i]*us[i]-0.5*us[i+1]*us[i+1]);//u^n+0.5_i+0.5 in eq 6.16
     }
 }
 
